@@ -28,16 +28,6 @@ class GameOfLife:
                                    [0, 0, 1, 0]])
 
 
-        elif initial_state == 'manual':
-            self.state = [[0, 0, 0, 0, 1, 0, 0, 0, 0],
-                          [0, 0, 0, 1, 1, 1, 0, 0, 0],
-                          [0, 0, 1, 0, 0, 1, 1, 0, 0],
-                          [0, 0, 1, 1, 0, 0, 0, 0, 0],
-                          [0, 0, 0, 0, 1, 0, 0, 0, 0],
-                          [0, 0, 1, 0, 0, 0, 0, 0, 0],
-                          [0, 1, 0, 0, 0, 0, 0, 0, 1]]
-
-
         elif initial_state == 'aleatory':
             self.state = np.random.randint(0, 2, (height, width))
 
